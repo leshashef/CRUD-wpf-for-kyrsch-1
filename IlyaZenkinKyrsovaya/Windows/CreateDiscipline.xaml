@@ -1,0 +1,24 @@
+﻿<Window x:Class="IlyaZenkinKyrsovaya.Windows.CreateDiscipline"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IlyaZenkinKyrsovaya.Windows"
+        mc:Ignorable="d"
+        Title="CreateDiscipline" Height="400" Width="400">
+    <Grid>
+        <TextBox x:Name="NameDiscipline" HorizontalAlignment="Left" Margin="53,52,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CountHour" HorizontalAlignment="Left" Margin="53,99,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TypeOfControl" HorizontalAlignment="Left" Margin="53,149,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+      
+        <Button Click="Button_Click" Content="Добавить запись" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="108"/>
+        <ComboBox x:Name="Chair" HorizontalAlignment="Left" Margin="53,235,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="LeadingTeacher" HorizontalAlignment="Left" Margin="53,280,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Дисциплина" HorizontalAlignment="Left" Margin="230,48,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label Content="Количество часов" HorizontalAlignment="Left" Margin="230,95,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label Content="Итоговый контроль" HorizontalAlignment="Left" Margin="230,145,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Факультет" HorizontalAlignment="Left" Margin="230,233,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label Content="Главный преподаватель" HorizontalAlignment="Left" Margin="230,278,0,0" VerticalAlignment="Top" Width="149"/>
+
+    </Grid>
+</Window>

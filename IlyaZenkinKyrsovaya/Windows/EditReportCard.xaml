@@ -1,0 +1,21 @@
+﻿<Window x:Class="IlyaZenkinKyrsovaya.Windows.EditReportCard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IlyaZenkinKyrsovaya.Windows"
+        mc:Ignorable="d"
+        Title="EditReportCard" Height="400" Width="400">
+    <Grid>
+        <Button x:Name="buttonComplete" Click="Button_Click" Content="Изменить" HorizontalAlignment="Center" Margin="0,330,0,0" VerticalAlignment="Top" Width="106"/>
+        <ComboBox x:Name="studentBox" HorizontalAlignment="Left" Margin="69,73,0,0" VerticalAlignment="Top" Width="152"/>
+        <ComboBox x:Name="teacherBox" HorizontalAlignment="Left" Margin="69,127,0,0" VerticalAlignment="Top" Width="152"/>
+        <ComboBox x:Name="disciplineBox" HorizontalAlignment="Left" Margin="69,0,0,0" VerticalAlignment="Center" Width="152"/>
+        <TextBox x:Name="grade" HorizontalAlignment="Left" Margin="69,233,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Студент" HorizontalAlignment="Left" Margin="242,71,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Преподаватель" HorizontalAlignment="Left" Margin="242,125,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Дисциплина" HorizontalAlignment="Left" Margin="242,181,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Оценка" HorizontalAlignment="Left" Margin="242,233,0,0" VerticalAlignment="Top" Width="148"/>
+
+    </Grid>
+</Window>
