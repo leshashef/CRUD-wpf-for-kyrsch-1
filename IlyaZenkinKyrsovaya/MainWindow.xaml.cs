@@ -54,7 +54,7 @@ namespace IlyaZenkinKyrsovaya
                                   Grades = reportCart.Grades,
                                   DisciplineName = discipline.NameDiscipline
                               };
-             tableRepordCard.Items.Clear();
+             tableRepordCard.ItemsSource = null;
             foreach (var card in reportCards)
             {
                 viewRepordCards.Add(new ViewRepordCard
@@ -73,14 +73,14 @@ namespace IlyaZenkinKyrsovaya
         private void createTableChair()
         {
            List< Chair> chairs = contextDB.Chair.ToList();
-            tableChair.Items.Clear();
+            tableChair.ItemsSource = null;
             tableChair.ItemsSource = chairs;
             
         }
         private void createTableStudent()
         {
             List<Student> student = contextDB.Student.Include(x=>x.Chair).ToList();
-            tableStudent.Items.Clear();
+            tableStudent.ItemsSource = null;
             foreach (var st in student)
             {
                 tableStudent.Items.Add(new {
@@ -99,7 +99,7 @@ namespace IlyaZenkinKyrsovaya
         private void createTableTeacher()
         {
             List<Teacher> teacher = contextDB.Teacher.ToList();
-            tableTeacher.Items.Clear();
+            tableTeacher.ItemsSource = null;
             foreach (var st in teacher)
             {
                 tableTeacher.Items.Add(new
@@ -121,7 +121,7 @@ namespace IlyaZenkinKyrsovaya
         private void createTableDiscipline()
         {
             List<Discipline> discipline = contextDB.Discipline.ToList();
-            tableDiscipline.Items.Clear();
+            tableDiscipline.ItemsSource = null;
             foreach (var st in discipline)
             {
                 tableDiscipline.Items.Add(new
