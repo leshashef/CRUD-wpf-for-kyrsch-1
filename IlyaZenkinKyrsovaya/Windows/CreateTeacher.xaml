@@ -19,7 +19,7 @@
         <ComboBox x:Name="Chair" HorizontalAlignment="Left" Margin="52,376,0,0" VerticalAlignment="Top" Width="120"/>
         <DatePicker x:Name="YearOfBirth" HorizontalAlignment="Left" Margin="52,427,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="YearStartWork" HorizontalAlignment="Left" Margin="52,473,0,0" VerticalAlignment="Top"/>
-        <Button  Content="Создать запись" HorizontalAlignment="Center" Margin="0,528,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button Click="Button_Click" Content="Создать запись" HorizontalAlignment="Center" Margin="0,528,0,0" VerticalAlignment="Top" Width="109"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="200,33,0,0" VerticalAlignment="Top" Width="157"/>
         <Label Content="Отчество" HorizontalAlignment="Left" Margin="200,69,0,0" VerticalAlignment="Top" Width="157"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="200,104,0,0" VerticalAlignment="Top" Width="157"/>
